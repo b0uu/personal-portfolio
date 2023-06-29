@@ -1,0 +1,828 @@
+@use "utils" as *;
+@use "global" as *;
+
+$color_type_0: rgb(0, 0, 0);
+$color_type_1: rgb(102, 102, 102);
+$color_type_2: rgb(191, 191, 191);
+$color_type_3: rgb(255, 255, 255);
+$color_type_4: rgba(255, 255, 255, 0.898);
+
+$bg_color_type_0: rgb(0, 0, 0);
+$bg_color_type_1: rgb(16, 16, 16);
+$bg_color_type_2: rgb(19, 21, 23);
+$bg_color_type_3: rgb(24, 24, 24);
+$bg_color_type_4: rgb(255, 255, 255);
+$bg_color_type_5: rgba(39, 126, 255, 0.498);
+
+$padding_type_0: undefinedpx undefinedpx undefinedpx undefinedpx;
+
+$border_radius_type_0: 0px 0px 5px 5px;
+$border_radius_type_1: 10.35px 10.35px 10.35px 10.35px;
+$border_radius_type_2: 19.76px 19.76px 19.76px 19.76px;
+$border_radius_type_3: 5px 0px 0px 5px;
+$border_radius_type_4: 5px 5px 5px 5px;
+$border_radius_type_5: 9.85px 9.85px 9.85px 9.85px;
+
+$font_type_0: 600 40px/1.22 "Montserrat", Helvetica, Arial, serif;
+$font_type_1: 400 26px/1.23 "Montserrat", Helvetica, Arial, serif;
+$font_type_2: 600 21px/1.23 "Montserrat", Helvetica, Arial, serif;
+$font_type_3: 700 18px/1.22 "Montserrat", Helvetica, Arial, serif;
+$font_type_4: 600 16px/1.25 "Montserrat", Helvetica, Arial, serif;
+$font_type_5: 600 15px/1.2 "Montserrat", Helvetica, Arial, serif;
+$font_type_6: 700 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+$font_type_7: 400 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+$font_type_8: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+$font_type_9: 500 13px/1.23 "Montserrat", Helvetica, Arial, serif;
+$font_type_10: 600 13px/1.23 "Montserrat", Helvetica, Arial, serif;
+$font_type_11: 600 10px/1.2 "Montserrat", Helvetica, Arial, serif;
+$font_type_12: 1em/1.23 "Montserrat", Helvetica, Arial, serif;
+$font_type_13: 600 1em/1.23 "Montserrat", Helvetica, Arial, serif;
+$font_type_14: 500 1em/1.23 "Montserrat", Helvetica, Arial, serif;
+$font_type_15: 1em/1.21 "Montserrat", Helvetica, Arial, serif;
+$font_type_16: 700 1em/1.21 "Montserrat", Helvetica, Arial, serif;
+
+.smaller-width-portfolio {
+  &.main {
+    @include flex-column;
+    background-color: $bg_color_type_2;
+    padding: $padding_type_0;
+    position: relative;
+    overflow: hidden;
+  }
+  .main > .cell {
+    @include flex-column;
+    position: relative;
+  }
+  .section1__section1 {
+    @include flex-column;
+    position: relative;
+    flex-grow: 1;
+  }
+  .section1__decorator {
+    width: calc(100% - -520px);
+    height: auto;
+    aspect-ratio: 0.76;
+    vertical-align: top;
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: -520px;
+  }
+  .section1__flex_row {
+    @include mq-between(xxl, xxxl) {
+      width: 77.64%;
+      margin: 204px 8.14% 334px 14.21%;
+    }
+    @include lg {
+      width: 77.92%;
+    }
+    @include md {
+      width: 82.47%;
+    }
+    @include sm {
+      width: 86.25%;
+    }
+    @include xs {
+      width: 89.32%;
+    }
+    @include xxs {
+      width: 91.77%;
+    }
+    @include tn {
+      width: 93.7%;
+    }
+    display: flex;
+    align-items: center;
+    width: 72.57%;
+    position: relative;
+    flex-grow: 1;
+    margin: 204px auto 334px;
+  }
+  .section1__flex_row > .cell {
+    @include flex-column;
+    position: relative;
+    flex: 1 1 586px;
+  }
+  .section1__flex_col {
+    @include flex-column;
+    position: relative;
+    flex-grow: 1;
+    margin: 41px 0px 13px;
+  }
+  .section1__flex_col > .cell {
+    @include flex-column;
+    position: relative;
+  }
+  .section1__group {
+    @include flex-column;
+    position: relative;
+    flex-grow: 1;
+  }
+  .section1__hero_title {
+    width: 45px;
+    height: auto;
+    aspect-ratio: 0.82;
+    vertical-align: top;
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    bottom: 24px;
+    left: 325px;
+  }
+  .section1__hero_title1 {
+    @include lg {
+      font-size: 36px;
+      text-align: left;
+    }
+    @include md {
+      font-size: 32px;
+    }
+    @include sm {
+      font-size: 28px;
+    }
+    @include xs {
+      font-size: 24px;
+    }
+    @include tn {
+      font-size: 16px;
+    }
+    @include font-face($font_type_0, $color_type_3, 0px);
+    position: relative;
+    flex-grow: 1;
+    min-height: 67px;
+  }
+  .section1__medium_title_box {
+    @include md {
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    width: 88.23%;
+    position: relative;
+    flex-grow: 1;
+    min-height: 151px;
+    margin: 22px 11.43% 0px 0.34%;
+  }
+  .section1__medium_title {
+    @include font-face($font_type_1, $color_type_3, 0px);
+    @include md {
+      font-size: 20px;
+      text-align: left;
+    }
+    @include sm {
+      font-size: 16px;
+    }
+    @include tn {
+      font-size: 12px;
+    }
+  }
+  .section1__medium_title_span0 {
+    font: $font_type_12;
+  }
+  .section1__medium_title_span1 {
+    font: $font_type_13;
+  }
+  .section1__medium_title_span2 {
+    font: $font_type_12;
+  }
+  .section1__content_box {
+    @include flex-column;
+    border-radius: $border_radius_type_2;
+    outline: 4px solid rgba(255, 255, 255, 0.203);
+    outline-offset: -2px;
+    width: 129px;
+    position: relative;
+    flex-grow: 1;
+    min-width: 129px;
+    margin: 66px auto 0px 0px;
+  }
+  .section1__group1 {
+    @include lg {
+      margin: 11.5px 8px 11.5px 24px;
+    }
+    @include md {
+      margin: 11.5px 8px 11.5px 20px;
+    }
+    @include sm {
+      margin: 11.5px 8px 11.5px 16px;
+    }
+    @include xs {
+      margin: 11.5px 4px 11.5px 16px;
+    }
+    @include xxs {
+      margin: 11.5px 4px 11.5px 12px;
+    }
+    @include tn {
+      margin: 11.5px 4px 11.5px 8px;
+    }
+    @include flex-column;
+    position: relative;
+    flex-grow: 1;
+    margin: 11.5px 12px 11.5px 30px;
+  }
+  .section1__image7 {
+    width: 6px;
+    height: auto;
+    aspect-ratio: 0.86;
+    vertical-align: top;
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    top: 5.5px;
+    left: -10px;
+  }
+  .section1__text3 {
+    @include v-center-content;
+    justify-content: center;
+    font: $font_type_6;
+    color: $color_type_3;
+    text-align: center;
+    letter-spacing: 0px;
+    width: 87px;
+    position: relative;
+    flex-grow: 1;
+    min-width: 87px;
+  }
+  .section1__flex_row > .spacer {
+    flex: 0 0 95px;
+    min-width: 95px;
+  }
+  .section1__flex_row > .cell1 {
+    @include flex-column;
+    position: relative;
+    flex: 0 0 335px;
+    min-width: 335px;
+  }
+  .section1__content_box1 {
+    @include flex-column;
+    background-color: $bg_color_type_3;
+    border-radius: $border_radius_type_4;
+    outline: 1px solid rgb(70, 70, 70);
+    box-shadow: 4px 4px 4px 5px rgba(0, 0, 0, 0.247);
+    position: relative;
+    flex-grow: 1;
+  }
+  .section1__flex_col1 {
+    @include flex-column;
+    row-gap: 9px;
+    width: 61.49%;
+    position: relative;
+    flex-grow: 1;
+    margin: 222px auto 126px;
+  }
+  .section1__flex_col1 > .cell {
+    @include flex-column;
+    position: relative;
+  }
+  .section1__highlights2 {
+    @include sm {
+      font-size: 12px;
+    }
+    display: flex;
+    justify-content: center;
+    font: $font_type_3;
+    color: $color_type_3;
+    text-align: center;
+    letter-spacing: 0px;
+    position: relative;
+    flex-grow: 1;
+    min-height: 22px;
+  }
+  .section1__group2 {
+    @include md {
+      margin: 0px 12px;
+    }
+    @include xs {
+      margin: 0px 8px;
+    }
+    @include tn {
+      margin: 0px 4px;
+    }
+    @include flex-column;
+    position: relative;
+    flex-grow: 1;
+    margin: 0px 19px;
+  }
+  .section1__icon4 {
+    width: 6px;
+    height: auto;
+    aspect-ratio: 1;
+    vertical-align: top;
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    top: 6px;
+    left: 17px;
+  }
+  .section1__text2_box {
+    @include h-center-content;
+    position: relative;
+    flex-grow: 1;
+    min-height: 21px;
+  }
+  .section1__text2 {
+    font: $font_type_9;
+    color: $color_type_0;
+    text-align: center;
+    letter-spacing: 0px;
+  }
+  .section1__text2_span0 {
+    font: $font_type_14;
+    color: $color_type_1;
+  }
+  .section1__text2_span1 {
+    font: $font_type_13;
+    color: $color_type_1;
+  }
+  .section1__text2_span2 {
+    font: $font_type_13;
+    color: $color_type_3;
+  }
+  .section1__image3 {
+    width: 147px;
+    height: auto;
+    aspect-ratio: 1;
+    vertical-align: top;
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    top: 45px;
+    left: -100vw;
+    right: -100vw;
+    margin: 0px auto;
+  }
+  .section1__group3 {
+    @include flex-column;
+    height: 99px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+  .section1__group4 {
+    @include flex-column;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+  .section1__rect8 {
+    background-color: $bg_color_type_1;
+    border-radius: $border_radius_type_0;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+  .section1__image4 {
+    width: 25px;
+    height: auto;
+    aspect-ratio: 1.32;
+    vertical-align: top;
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    top: 41px;
+    right: 55px;
+  }
+  .section1__image5 {
+    width: 27px;
+    height: auto;
+    aspect-ratio: 1.29;
+    vertical-align: top;
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    top: 38px;
+    right: 117px;
+  }
+  .section1__icon5 {
+    width: 28px;
+    height: auto;
+    aspect-ratio: 1.04;
+    vertical-align: top;
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    top: 35px;
+    left: 126px;
+  }
+  .section1__image6 {
+    width: 33px;
+    height: auto;
+    aspect-ratio: 1.38;
+    vertical-align: top;
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    top: 38px;
+    left: 56px;
+  }
+  .section2__section2 {
+    @include flex-column;
+    position: relative;
+    flex-grow: 1;
+  }
+  .section2__group {
+    @include flex-column;
+    width: 73.93%;
+    position: relative;
+    flex-grow: 1;
+    margin: 259px 11.71% 119px 14.36%;
+  }
+  .section2__group1 {
+    @include flex-column;
+    position: relative;
+    flex-grow: 1;
+  }
+  .section2__flex_row {
+    @include lg {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-content: flex-start;
+      row-gap: 16px;
+    }
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-grow: 1;
+  }
+  .section2__flex_row > .cell {
+    @include lg {
+      flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+      min-width: unset;
+    }
+    @include flex-column;
+    position: relative;
+    flex: 1 1 461px;
+  }
+  .section2__flex_col {
+    @include flex-column;
+    row-gap: 8px;
+    position: relative;
+    flex-grow: 1;
+    margin: 0px 0px 401px;
+  }
+  .section2__flex_col > .cell {
+    @include flex-column;
+    position: relative;
+  }
+  .section2__subtitle {
+    @include md {
+      font-size: 16px;
+      text-align: left;
+    }
+    @include tn {
+      font-size: 12px;
+    }
+    @include font-face($font_type_2, $color_type_3, 0px);
+    width: 56.18%;
+    position: relative;
+    flex-grow: 1;
+    min-height: 68px;
+    margin: 0px 43.82% 0px 0%;
+  }
+  .section2__flex_col1 {
+    @include lg {
+      margin: 0px 0px 0px 8px;
+    }
+    @include xs {
+      margin: 0px 0px 0px 4px;
+    }
+    @include flex-column;
+    position: relative;
+    flex-grow: 1;
+    margin: 0px 0px 0px 12px;
+  }
+  .section2__flex_col1 > .cell {
+    @include flex-column;
+    position: relative;
+  }
+  .section2__highlights1 {
+    @include font-face($font_type_5, $color_type_3, 0px);
+    position: relative;
+    flex-grow: 1;
+  }
+  .section2__icon2 {
+    width: 20px;
+    height: auto;
+    aspect-ratio: 1;
+    vertical-align: top;
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    bottom: 0px;
+    right: 212px;
+  }
+  .section2__paragraph_box {
+    position: relative;
+    flex-grow: 1;
+    min-height: 68px;
+    margin: 13px 0px 0px;
+  }
+  .section2__paragraph {
+    @include font-face($font_type_7, $color_type_2, 0px);
+  }
+  .section2__paragraph_span0 {
+    font: $font_type_15;
+  }
+  .section2__paragraph_span1 {
+    font: $font_type_16;
+  }
+  .section2__paragraph_span2 {
+    font: $font_type_15;
+  }
+  .section2__text1 {
+    @include font-face($font_type_8, $color_type_3, 0px);
+    position: relative;
+    flex-grow: 1;
+    margin: 2px 0px 0px;
+  }
+  .section2__flex_row > .spacer {
+    @include lg {
+      display: none;
+    }
+    flex: 0 1 84px;
+  }
+  .section2__flex_row > .cell1 {
+    @include lg {
+      flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+      min-width: unset;
+    }
+    @include flex-column;
+    position: relative;
+    flex: 1 1 490px;
+  }
+  .section2__flex_col2 {
+    @include flex-column;
+    position: relative;
+    flex-grow: 1;
+  }
+  .section2__flex_col2 > .cell {
+    @include flex-column;
+    position: relative;
+  }
+  .section2__line {
+    background-color: $bg_color_type_4;
+    height: 2px;
+    position: absolute;
+    top: 16px;
+    left: 123px;
+    right: 0px;
+  }
+  .section2__subtitle1 {
+    @include md {
+      font-size: 16px;
+      text-align: left;
+    }
+    @include tn {
+      font-size: 12px;
+    }
+    @include font-face($font_type_2, $color_type_3, 0px);
+    position: relative;
+    flex-grow: 1;
+  }
+  .section2__content_box14 {
+    @include flex-column;
+    background-color: $bg_color_type_3;
+    border-radius: $border_radius_type_4;
+    outline: 1px solid rgb(125, 125, 125);
+    position: relative;
+    flex-grow: 1;
+    margin: 30px 0px 0px 1px;
+  }
+  .section2__rect1 {
+    background-color: $bg_color_type_0;
+    border-radius: $border_radius_type_3;
+    width: 122px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+  .section2__icon3 {
+    width: 46px;
+    height: auto;
+    aspect-ratio: 1;
+    vertical-align: top;
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    top: 50px;
+    left: 38px;
+  }
+  .section2__flex_col3 {
+    @include flex-column;
+    width: 100%;
+    height: 100%;
+  }
+  .section2__flex_col3 > .cell {
+    @include flex-column;
+    position: relative;
+  }
+  .section2__icon21 {
+    width: 20px;
+    height: auto;
+    aspect-ratio: 1;
+    vertical-align: top;
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    bottom: 1px;
+    left: 146px;
+  }
+  .section2__highlights {
+    @include lg {
+      font-size: 12px;
+      text-align: left;
+    }
+    @include font-face($font_type_4, $color_type_3, 0px);
+    position: relative;
+    flex-grow: 1;
+  }
+  .section2__paragraph1 {
+    @include font-face($font_type_7, $color_type_2, 0px);
+    position: relative;
+    flex-grow: 1;
+    margin: 10px 0px 0px;
+  }
+  .section2__flex_row1 {
+    @include v-center-content;
+    column-gap: 14px;
+    position: relative;
+    flex-grow: 1;
+    margin: 16px 0px 0px;
+  }
+  .section2__flex_row1 > .cell {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 56px;
+  }
+  .section2__content_box2 {
+    @include flex-column;
+    background-color: $bg_color_type_5;
+    border-radius: $border_radius_type_1;
+    position: relative;
+    flex-grow: 1;
+  }
+  .section2__info {
+    @include v-center-content;
+    justify-content: center;
+    font: $font_type_11;
+    color: $color_type_4;
+    text-align: center;
+    letter-spacing: 0px;
+    position: relative;
+    flex-grow: 1;
+    min-height: 17px;
+    margin: 2px 5px 2px 4px;
+  }
+  .section2__flex_row1 > .cell1 {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 67px;
+  }
+  .section2__content_box3 {
+    @include flex-column;
+    background-color: $bg_color_type_5;
+    border-radius: $border_radius_type_5;
+    position: relative;
+    flex-grow: 1;
+    margin: 1px 0px 0px;
+  }
+  .section2__info1 {
+    @include v-center-content;
+    justify-content: center;
+    font: $font_type_11;
+    color: $color_type_4;
+    text-align: center;
+    letter-spacing: 0px;
+    position: relative;
+    flex-grow: 1;
+    min-height: 17px;
+    margin: 1px 5px 2px;
+  }
+  .section2__flex_row1 > .cell2 {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 48px;
+  }
+  .section2__content_box4 {
+    @include flex-column;
+    background-color: $bg_color_type_5;
+    border-radius: $border_radius_type_5;
+    position: relative;
+    flex-grow: 1;
+    margin: 1px 0px 0px;
+  }
+  .section2__info2 {
+    @include v-center-content;
+    justify-content: center;
+    font: $font_type_11;
+    color: $color_type_4;
+    text-align: center;
+    letter-spacing: 0px;
+    position: relative;
+    flex-grow: 1;
+    min-height: 17px;
+    margin: 1px 4px 2px 3px;
+  }
+  .section2__flex_row1 > .cell3 {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 36px;
+  }
+  .section2__content_box5 {
+    @include flex-column;
+    background-color: $bg_color_type_5;
+    border-radius: $border_radius_type_5;
+    position: relative;
+    flex-grow: 1;
+    margin: 1px 0px 0px;
+  }
+  .section2__info3 {
+    @include v-center-content;
+    justify-content: center;
+    font: $font_type_11;
+    color: $color_type_4;
+    text-align: center;
+    letter-spacing: 0px;
+    position: relative;
+    flex-grow: 1;
+    min-height: 17px;
+    margin: 1px 3px 2px;
+  }
+  .section2__flex_col3 > .cell1 {
+    @include flex-column;
+    position: relative;
+  }
+  .section2__flex_row1 > .cell4 {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 56px;
+  }
+  .section2__flex_row1 > .cell5 {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 67px;
+  }
+  .section2__flex_row1 > .cell6 {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 48px;
+  }
+  .section2__flex_row1 > .cell7 {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 36px;
+  }
+  .section2__flex_col3 > .cell2 {
+    @include flex-column;
+    position: relative;
+  }
+  .section2__flex_row1 > .cell8 {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 56px;
+  }
+  .section2__flex_row1 > .cell9 {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 67px;
+  }
+  .section2__flex_row1 > .cell10 {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 48px;
+  }
+  .section2__flex_row1 > .cell11 {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 36px;
+  }
+  .section2__group2 {
+    @include flex-column;
+    position: relative;
+    flex-grow: 1;
+    margin: 19px 1px 0px;
+  }
+  .section2__text {
+    @include font-face($font_type_10, $color_type_3, 0px);
+    position: relative;
+    flex-grow: 1;
+  }
+  .section2__icon1 {
+    width: 15px;
+    height: auto;
+    aspect-ratio: 1;
+    vertical-align: top;
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    top: 2px;
+    left: 120px;
+  }
+}

@@ -1,5 +1,4 @@
 @use "utils" as *;
-@use "global" as *;
 
 $color_type_0: rgb(0, 0, 0);
 $color_type_1: rgb(102, 102, 102);
@@ -41,6 +40,15 @@ $font_type_14: 500 1em/1.23 "Montserrat", Helvetica, Arial, serif;
 $font_type_15: 1em/1.21 "Montserrat", Helvetica, Arial, serif;
 $font_type_16: 700 1em/1.21 "Montserrat", Helvetica, Arial, serif;
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #131517;
+}
+
 .smaller-width-portfolio {
   &.main {
     @include flex-column;
@@ -59,7 +67,7 @@ $font_type_16: 700 1em/1.21 "Montserrat", Helvetica, Arial, serif;
     flex-grow: 1;
   }
   .section1__decorator {
-    width: calc(100% - -520px);
+    width: calc(100% - -420px);
     height: auto;
     aspect-ratio: 0.76;
     vertical-align: top;

@@ -7,6 +7,10 @@ body {
   background-color: #131517;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .smaller-width-portfolio.main {
   display: flex;
   flex-direction: column;
@@ -586,6 +590,7 @@ body {
   letter-spacing: 0px;
   position: relative;
   flex-grow: 1;
+  margin-top: 15px;
 }
 .smaller-width-portfolio .section2__icon2 {
   width: 20px;
@@ -627,6 +632,7 @@ body {
   position: relative;
   flex-grow: 1;
   margin: 2px 0px 0px;
+  margin-bottom: 15px;
 }
 .smaller-width-portfolio .section2__flex_row > .spacer {
   flex: 0 1 84px;
@@ -966,4 +972,28 @@ body {
   position: absolute;
   top: 2px;
   left: 120px;
+}
+.smaller-width-portfolio .experiences-1 a {
+  text-decoration: none;
+}
+.smaller-width-portfolio .experiences-1:hover {
+  border-radius: 5px;
+  border: 1px solid rgb(121, 189, 240);
+}
+.smaller-width-portfolio .floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 20px);
+  }
+  to {
+    transform: translate(0, 0px);
+  }
 }/*# sourceMappingURL=style.css.map */

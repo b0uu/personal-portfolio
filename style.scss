@@ -49,6 +49,10 @@ body {
     background-color: #131517;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 .smaller-width-portfolio {
   &.main {
     @include flex-column;
@@ -513,6 +517,7 @@ body {
     @include font-face($font_type_5, $color_type_3, 0px);
     position: relative;
     flex-grow: 1;
+    margin-top:15px;
   }
   .section2__icon2 {
     width: 20px;
@@ -548,6 +553,7 @@ body {
     position: relative;
     flex-grow: 1;
     margin: 2px 0px 0px;
+    margin-bottom: 15px;
   }
   .section2__flex_row > .spacer {
     @include lg {
@@ -833,4 +839,31 @@ body {
     top: 2px;
     left: 120px;
   }
+  .experiences-1 a {
+    text-decoration: none;
+  }
+  .experiences-1:hover {
+    border-radius: 5px;
+    border: 1px solid rgb(121, 189, 240);
+  }
+    .floating {
+        animation-name: floating;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+      }
+  
+      @keyframes floating {
+        from {
+          transform: translate(0, 0px);
+        }
+  
+        65% {
+          transform: translate(0, 20px);
+        }
+  
+        to {
+          transform: translate(0, -0px);
+        }
+      }
 }

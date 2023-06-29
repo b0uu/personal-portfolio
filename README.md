@@ -10,4 +10,5 @@ Figma link: https://www.figma.com/file/b13TN1yHvNBdv1mOscWpSi/My-portfolio-desig
 
 
 - Pxcode:
-    https://www.pxcode.io/preview/649cdb151a5cb1000972f1a2/649cdb6c1a5cb1000972f1a7
+    https://www.pxcode.io/preview/649cdb151a5cb1000972f1a2/649cdb6c1a5cb1000972f1a7 v1
+    https://www.pxcode.io/preview/649cdb151a5cb1000972f1a2/649db6b15df129000829239c v2

@@ -983,6 +983,11 @@ html {
   border-radius: 5px;
   border: 1px solid rgb(121, 189, 240);
 }
+.smaller-width-portfolio .load-transition {
+  transition: opacity 400ms ease 0s, transform 400ms ease 0s;
+  transform: none;
+  opacity: 1;
+}
 .smaller-width-portfolio .floating {
   animation-name: floating;
   animation-duration: 3s;

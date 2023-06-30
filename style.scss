@@ -501,6 +501,7 @@ html {
     flex-grow: 1;
     min-height: 68px;
     margin: 0px 43.82% 0px 0%;
+    margin-top: 15px;
   }
   .section2__flex_col1 {
     @include lg {
@@ -591,6 +592,7 @@ html {
     top: 16px;
     left: 123px;
     right: 0px;
+    margin-top: 10px;
   }
   .section2__subtitle1 {
     @include md {
@@ -603,6 +605,7 @@ html {
     @include font-face($font_type_2, $color_type_3, 0px);
     position: relative;
     flex-grow: 1;
+    margin-top: 15px;
   }
   .section2__content_box14 {
     @include flex-column;

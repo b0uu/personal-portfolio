@@ -208,13 +208,14 @@ html {
   border-radius: 19.76px 19.76px 19.76px 19.76px;
   outline: 4px solid rgba(255, 255, 255, 0.203);
   outline-offset: -2px;
-  width: 129px;
+  width: 215px;
+  height: auto;
+  aspect-ratio: 3.23;
   position: relative;
-  flex-grow: 1;
-  min-width: 129px;
+  min-width: 215px;
   margin: 66px auto 0px 0px;
 }
-.section1__content_box a {
+.smaller-width-portfolio .section1__content_box a {
   text-decoration: none;
 }
 .smaller-width-portfolio .section1__group1 {
@@ -236,7 +237,7 @@ html {
 }
 @media (max-width: 767px) {
   .smaller-width-portfolio .section1__group1 {
-    margin: 11.5px 8px 11.5px 16px;
+    margin: 11.5px 12px 11.5px 16px;
   }
 }
 @media (max-width: 575px) {
@@ -264,21 +265,22 @@ html {
   -o-object-position: center center;
      object-position: center center;
   position: absolute;
-  top: 5.5px;
-  left: -10px;
+  top: 18.5px;
+  left: 9px;
 }
 .smaller-width-portfolio .section1__text3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font: 700 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+  font: 600 21px/1.23 "Montserrat", Helvetica, Arial, serif;
   color: rgb(255, 255, 255);
   text-align: center;
   letter-spacing: 0px;
-  width: 87px;
+  width: 160px;
   position: relative;
   flex-grow: 1;
-  min-width: 87px;
+  min-width: 160px;
+  height: 40px;
 }
 .smaller-width-portfolio .section1__flex_row > .spacer {
   flex: 0 0 95px;

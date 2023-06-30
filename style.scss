@@ -203,11 +203,15 @@ html {
     border-radius: $border_radius_type_2;
     outline: 4px solid rgba(255, 255, 255, 0.203);
     outline-offset: -2px;
-    width: 129px;
+    width: 215px;
+    height: auto;
+    aspect-ratio: 3.23;
     position: relative;
-    flex-grow: 1;
-    min-width: 129px;
-    margin: 66px auto 0px 0px;
+    min-width: 215px;
+    margin: 66px auto 0px 0px
+  }
+  .section1__content_box a {
+    text-decoration: none;
   }
   .section1__group1 {
     @include lg {
@@ -217,7 +221,7 @@ html {
       margin: 11.5px 8px 11.5px 20px;
     }
     @include sm {
-      margin: 11.5px 8px 11.5px 16px;
+      margin: 11.5px 12px 11.5px 16px;
     }
     @include xs {
       margin: 11.5px 4px 11.5px 16px;
@@ -241,20 +245,21 @@ html {
     object-fit: cover;
     object-position: center center;
     position: absolute;
-    top: 5.5px;
-    left: -10px;
+    top: 18.5px;
+    left: 9px;
   }
   .section1__text3 {
     @include v-center-content;
     justify-content: center;
-    font: $font_type_6;
+    font: $font_type_2;
     color: $color_type_3;
     text-align: center;
     letter-spacing: 0px;
-    width: 87px;
+    width: 160px;
     position: relative;
     flex-grow: 1;
-    min-width: 87px;
+    min-width: 160px;
+    height: 40px;
   }
   .section1__flex_row > .spacer {
     flex: 0 0 95px;

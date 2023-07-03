@@ -1,3 +1,7 @@
+/*
+- 992px width change media
+- 
+*/
 * {
   margin: 0;
   padding: 0;
@@ -208,15 +212,11 @@ html {
   border-radius: 19.76px 19.76px 19.76px 19.76px;
   outline: 4px solid rgba(255, 255, 255, 0.203);
   outline-offset: -2px;
-  width: 215px;
-  height: auto;
-  aspect-ratio: 3.23;
+  width: 129px;
   position: relative;
-  min-width: 215px;
+  flex-grow: 1;
+  min-width: 129px;
   margin: 66px auto 0px 0px;
-}
-.smaller-width-portfolio .section1__content_box a {
-  text-decoration: none;
 }
 .smaller-width-portfolio .section1__group1 {
   display: flex;
@@ -237,7 +237,7 @@ html {
 }
 @media (max-width: 767px) {
   .smaller-width-portfolio .section1__group1 {
-    margin: 11.5px 12px 11.5px 16px;
+    margin: 11.5px 8px 11.5px 16px;
   }
 }
 @media (max-width: 575px) {
@@ -265,22 +265,21 @@ html {
   -o-object-position: center center;
      object-position: center center;
   position: absolute;
-  top: 18.5px;
-  left: 9px;
+  top: 5.5px;
+  left: -10px;
 }
 .smaller-width-portfolio .section1__text3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font: 600 21px/1.23 "Montserrat", Helvetica, Arial, serif;
+  font: 700 14px/1.21 "Montserrat", Helvetica, Arial, serif;
   color: rgb(255, 255, 255);
   text-align: center;
   letter-spacing: 0px;
-  width: 160px;
+  width: 87px;
   position: relative;
   flex-grow: 1;
-  min-width: 160px;
-  height: 40px;
+  min-width: 87px;
 }
 .smaller-width-portfolio .section1__flex_row > .spacer {
   flex: 0 0 95px;
@@ -499,7 +498,7 @@ html {
   width: 73.93%;
   position: relative;
   flex-grow: 1;
-  margin: 559px 11.71% 500px 14.36%;
+  margin: 259px 11.71% 119px 14.36%;
 }
 .smaller-width-portfolio .section2__group1 {
   display: flex;
@@ -555,7 +554,6 @@ html {
   flex-grow: 1;
   min-height: 68px;
   margin: 0px 43.82% 0px 0%;
-  margin-top: 15px;
 }
 @media (max-width: 991px) {
   .smaller-width-portfolio .section2__subtitle {
@@ -678,7 +676,6 @@ html {
   top: 16px;
   left: 123px;
   right: 0px;
-  margin-top: 10px;
 }
 .smaller-width-portfolio .section2__subtitle1 {
   font: 600 21px/1.23 "Montserrat", Helvetica, Arial, serif;
@@ -686,7 +683,6 @@ html {
   letter-spacing: 0px;
   position: relative;
   flex-grow: 1;
-  margin-top: 15px;
 }
 @media (max-width: 991px) {
   .smaller-width-portfolio .section2__subtitle1 {
@@ -987,11 +983,6 @@ html {
 .smaller-width-portfolio .experiences-1:hover {
   border-radius: 5px;
   border: 1px solid rgb(121, 189, 240);
-}
-.smaller-width-portfolio .load-transition {
-  transition: opacity 400ms ease 0s, transform 400ms ease 0s;
-  transform: none;
-  opacity: 1;
 }
 .smaller-width-portfolio .floating {
   animation-name: floating;

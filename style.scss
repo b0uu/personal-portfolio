@@ -40,6 +40,11 @@ $font_type_14: 500 1em/1.23 "Montserrat", Helvetica, Arial, serif;
 $font_type_15: 1em/1.21 "Montserrat", Helvetica, Arial, serif;
 $font_type_16: 700 1em/1.21 "Montserrat", Helvetica, Arial, serif;
 
+/*
+- 992px width change media
+- 
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -50,8 +55,8 @@ body {
 }
 
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
 .smaller-width-portfolio {
   &.main {
@@ -203,15 +208,11 @@ html {
     border-radius: $border_radius_type_2;
     outline: 4px solid rgba(255, 255, 255, 0.203);
     outline-offset: -2px;
-    width: 215px;
-    height: auto;
-    aspect-ratio: 3.23;
+    width: 129px;
     position: relative;
-    min-width: 215px;
-    margin: 66px auto 0px 0px
-  }
-  .section1__content_box a {
-    text-decoration: none;
+    flex-grow: 1;
+    min-width: 129px;
+    margin: 66px auto 0px 0px;
   }
   .section1__group1 {
     @include lg {
@@ -221,7 +222,7 @@ html {
       margin: 11.5px 8px 11.5px 20px;
     }
     @include sm {
-      margin: 11.5px 12px 11.5px 16px;
+      margin: 11.5px 8px 11.5px 16px;
     }
     @include xs {
       margin: 11.5px 4px 11.5px 16px;
@@ -245,21 +246,20 @@ html {
     object-fit: cover;
     object-position: center center;
     position: absolute;
-    top: 18.5px;
-    left: 9px;
+    top: 5.5px;
+    left: -10px;
   }
   .section1__text3 {
     @include v-center-content;
     justify-content: center;
-    font: $font_type_2;
+    font: $font_type_6;
     color: $color_type_3;
     text-align: center;
     letter-spacing: 0px;
-    width: 160px;
+    width: 87px;
     position: relative;
     flex-grow: 1;
-    min-width: 160px;
-    height: 40px;
+    min-width: 87px;
   }
   .section1__flex_row > .spacer {
     flex: 0 0 95px;
@@ -448,7 +448,7 @@ html {
     width: 73.93%;
     position: relative;
     flex-grow: 1;
-    margin: 559px 11.71% 500px 14.36%;
+    margin: 259px 11.71% 119px 14.36%;
   }
   .section2__group1 {
     @include flex-column;
@@ -501,7 +501,6 @@ html {
     flex-grow: 1;
     min-height: 68px;
     margin: 0px 43.82% 0px 0%;
-    margin-top: 15px;
   }
   .section2__flex_col1 {
     @include lg {
@@ -592,7 +591,6 @@ html {
     top: 16px;
     left: 123px;
     right: 0px;
-    margin-top: 10px;
   }
   .section2__subtitle1 {
     @include md {
@@ -605,7 +603,6 @@ html {
     @include font-face($font_type_2, $color_type_3, 0px);
     position: relative;
     flex-grow: 1;
-    margin-top: 15px;
   }
   .section2__content_box14 {
     @include flex-column;
@@ -853,11 +850,6 @@ html {
   .experiences-1:hover {
     border-radius: 5px;
     border: 1px solid rgb(121, 189, 240);
-  }
-  .load-transition {
-    transition: opacity 400ms ease 0s, transform 400ms ease 0s; 
-    transform: none; 
-    opacity: 1;
   }
     .floating {
         animation-name: floating;

@@ -1000,4 +1000,17 @@ html {
   to {
     transform: translate(0, 0px);
   }
+}
+
+@media screen and (min-width: 1795px) and (max-width: 2000px) {
+  /* .section2__group {
+      width: 73.93%;
+      position: relative;
+      flex-grow: 1;
+      margin: 459px 11.71% 319px 14.36%;
+    } */
+  .section2__section2 {
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
 }/*# sourceMappingURL=style.css.map */

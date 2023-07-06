@@ -1,7 +1,11 @@
 @use "utils" as *;
 /* future updates: 
-- animate experiences & projects section on scroll position
 - mobile optimization
+- fix experiences / projects gap
+- animate experiences & projects section on scroll position
+- update with my real information
+- make everything clickable
+- publish and continue polishing
 */
 $color_type_0: rgb(0, 0, 0);
 $color_type_1: rgb(102, 102, 102);
@@ -1032,6 +1036,7 @@ html {
     }
     /* need entirely new experience & project section boxes for mobile view */
 }
+
     
 
 

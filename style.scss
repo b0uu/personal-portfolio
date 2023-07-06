@@ -29,6 +29,7 @@ $font_type_3: 700 18px/1.22 "Montserrat", Helvetica, Arial, serif;
 $font_type_4: 600 16px/1.25 "Montserrat", Helvetica, Arial, serif;
 $font_type_5: 600 15px/1.2 "Montserrat", Helvetica, Arial, serif;
 $font_type_6: 700 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+$font_type_69: 700 16px/1.21 "Montserrat", Helvetica, Arial, serif;
 $font_type_7: 400 14px/1.21 "Montserrat", Helvetica, Arial, serif;
 $font_type_8: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
 $font_type_9: 500 13px/1.23 "Montserrat", Helvetica, Arial, serif;
@@ -208,11 +209,18 @@ html {
     border-radius: $border_radius_type_2;
     outline: 4px solid rgba(255, 255, 255, 0.203);
     outline-offset: -2px;
-    width: 129px;
+    width: 150px;
+    height: 50px;
     position: relative;
     flex-grow: 1;
     min-width: 129px;
     margin: 66px auto 0px 0px;
+    text-decoration: none;
+  }
+  .section1__content_box a {
+    margin-top: 4px;
+    margin-left: 7px;
+    text-decoration: none;
   }
   .section1__group1 {
     @include lg {
@@ -246,13 +254,13 @@ html {
     object-fit: cover;
     object-position: center center;
     position: absolute;
-    top: 5.5px;
-    left: -10px;
+    top: 7px;
+    left: -13px;
   }
   .section1__text3 {
     @include v-center-content;
     justify-content: center;
-    font: $font_type_6;
+    font: $font_type_69;
     color: $color_type_3;
     text-align: center;
     letter-spacing: 0px;
@@ -481,7 +489,7 @@ html {
     row-gap: 8px;
     position: relative;
     flex-grow: 1;
-    margin: 0px 0px 401px;
+    margin: 0px 0px 305px;
   }
   .section2__flex_col > .cell {
     @include flex-column;
@@ -873,6 +881,19 @@ html {
       }
 }
 
+@media screen and (min-width: 1600px) and (max-width: 1794px) {
+    /* .section2__group {
+        width: 73.93%;
+        position: relative;
+        flex-grow: 1;
+        margin: 459px 11.71% 319px 14.36%;
+      } */
+    .section2__section2 {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}
+
 @media screen and (min-width: 1795px) and (max-width: 2000px) {
     /* .section2__group {
         width: 73.93%;
@@ -885,3 +906,127 @@ html {
         margin-bottom: 200px;
     }
 }
+
+@media screen and (min-width: 1613px) and (max-width: 2000px) {
+    .section1__group1 {
+        @include lg {
+            margin: 20.5px 19px 20.5px 32px;
+          }
+          @include md {
+            margin: 20.5px 12px 20.5px 24px;
+          }
+          @include sm {
+            margin: 20.5px 19px 20.5px 20px;
+          }
+          @include xs {
+            margin: 20.5px 8px 20.5px 20px;
+          }
+          @include xxs {
+            margin: 20.5px 8px 20.5px 16px;
+          }
+          @include tn {
+            margin: 20.5px 4px 20.5px 8px;
+          }
+          @include flex-column;
+          position: relative;
+          flex-grow: 1;
+          margin: 19.5px 19px 19.5px 38px;
+    }
+    .section1__text3 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font: $font_type_0;
+          color: $color_type_0;
+          text-align: center;
+          letter-spacing: 0px;
+          position: relative;
+          flex-grow: 1;
+          font-size: 20px;
+    }
+    .section1__image7 {
+        width: 10px;
+        height: auto;
+        aspect-ratio: 0.91;
+        vertical-align: top;
+        object-fit: cover;
+        object-position: center center;
+        position: absolute;
+        top: 6.5px;
+        left: -12px;
+    }
+    .section1__content_box {
+        @include flex-column;
+        border-radius: $border_radius_type_0;
+        outline: 5.024028778076172px solid rgba(255, 255, 255, 0.203);
+        outline-offset: -2.512014389038086px;
+        width: 30.91%;
+        position: relative;
+        margin: 67px 69.09% 0px 0%;
+      }
+    
+    /* .section1__content_box a {
+        /* @include flex-column;
+        border-radius: $border_radius_type_0;
+        outline: 5.024028778076172px solid rgba(255, 255, 255, 0.203);
+        outline-offset: -2.512014389038086px;
+        width: 25.71%;
+        position: relative; 
+        margin: 7px 200% 7px 0%; 
+        width: 35% */
+}
+
+@media screen and (max-width: 1000px) {
+    .section1__flex_row .spacer {
+        display: none;
+    }
+    .section1__content_box1 {
+        display: none !important;
+    }
+    .section1__flex_row .cell1 {
+        display: none !important;
+    }
+    .section1__hero_title {
+        display: none;
+    }
+    .section1__medium_title {
+        @include font-face($font_type_1, $color_type_3, 0px);
+        @include md {
+            font-size: 30px !important;
+            text-align: left;
+        }
+        @include sm {
+            font-size: 28px;
+        }
+        @include tn {
+            font-size: 28px;
+        }
+    }
+    .section1__hero_title1 {
+        @include lg {
+          font-size: 46px !important;
+          text-align: left;
+        }
+        @include md {
+          font-size: 32px;
+        }
+        @include sm {
+          font-size: 28px;
+        }
+        @include xs {
+          font-size: 24px;
+        }
+        @include tn {
+          font-size: 16px;
+        }
+        @include font-face($font_type_0, $color_type_3, 0px);
+        position: relative;
+        flex-grow: 1;
+        min-height: 67px;
+      }
+    /* need entirely new experience & project section boxes for mobile view */
+}
+    
+
+
+

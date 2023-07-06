@@ -1,3 +1,7 @@
+/* future updates: 
+- animate experiences & projects section on scroll position
+- mobile optimization
+*/
 /*
 - 992px width: change media to mobile
 - 1795 width: change media to desktop
@@ -1144,7 +1148,7 @@ html {
 }
 @media screen and (max-width: 1000px) and (max-width: 991px) {
   .section1__medium_title {
-    font-size: 30px !important;
+    font-size: 26px !important;
     text-align: left;
   }
 }
@@ -1192,5 +1196,10 @@ html {
 @media screen and (max-width: 1000px) and (max-width: 383px) {
   .section1__hero_title1 {
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .section1__content_box {
+    display: none !important;
   }
 }/*# sourceMappingURL=style.css.map */

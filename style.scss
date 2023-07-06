@@ -1,5 +1,8 @@
 @use "utils" as *;
-
+/* future updates: 
+- animate experiences & projects section on scroll position
+- mobile optimization
+*/
 $color_type_0: rgb(0, 0, 0);
 $color_type_1: rgb(102, 102, 102);
 $color_type_2: rgb(191, 191, 191);
@@ -992,7 +995,7 @@ html {
     .section1__medium_title {
         @include font-face($font_type_1, $color_type_3, 0px);
         @include md {
-            font-size: 30px !important;
+            font-size: 26px !important;
             text-align: left;
         }
         @include sm {
@@ -1024,6 +1027,9 @@ html {
         flex-grow: 1;
         min-height: 67px;
       }
+    .section1__content_box {
+        display: none !important;
+    }
     /* need entirely new experience & project section boxes for mobile view */
 }
     
